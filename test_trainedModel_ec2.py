@@ -15,10 +15,10 @@ from sagemaker.image_uris import retrieve
 # -------------------------
 # CONFIG — update these
 # -------------------------
-region        = "ap-south-1"   # Change to your AWS region
-role_arn      = "arn:aws:iam::<account-id>:role/<your-sagemaker-execution-role>"   # not used by local, but required by API
-model_art_uri = "s3://your-bucket/path/to/model.tar.gz"  # OR "file://<local-path-to-model.tar.gz>"
-test_csv_path = r"C:\path\to\insurance_test.csv"        # local path to the test CSV (label first, no header)
+region        = "us-east-1"   # Change to your AWS region
+role_arn      = "arn:aws:iam::365628041686:role/HCL-User-Role-SagemakerAccess-Vantive_sagemaker"   # not used by local, but required by API
+model_art_uri = "s3://patientsummarizewebserver/vantive-test-regression-01-13-copy-02/output/model.tar.gz"  # OR "file://<local-path-to-model.tar.gz>"
+test_csv_path = r"./insurance_test.csv"        # local path to the test CSV (label first, no header)
 
 # If your test CSV is in S3 instead of local, download it first:
 # import boto3
